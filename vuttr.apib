@@ -1,0 +1,49 @@
+FORMAT: 1A
+
+# VUTTR API
+
+Simpre repository to manage, share and search tools.
+
+# Group Tools
+
+Resources related to tools in the API.
+
+## Tools Collection [/tools]
+### List All Tools [GET]
++ Response 200 (application/json)
+    + Attributes
+        - tools (array[Tool])
+
+### Create a New Tool [POST]
++ Request New tool
+    + Attributes (New Tool)
++ Response 200 (application/json)
+    + Attributes (Tool)
+
+## Tool [/tools/:id]
+### Delete a Tool [DELETE]
++ Response 200 (application/json)
+    + Attributes (Tool)
+
++ Response 400 (application/json)
+    + Attributes (Error)
+
+
+# Data Structures
+
+## Tool (object)
+- id: (number, required) - Unique ID of the tool.
+- title: `Notion` (string, required) - Title of the tool.
+- link: `https://notion.so` (string, required) - Link to the tool.
+- description: `All in one tool to organize teams and ideas.` (string, required) - Some description of the tool.
+- tags: `organization`, `planning`, `collaboration`, `writing` (array, optional) - Associated tags of the tool.
+
+## New Tool (object)
+- title: `Hotel` (string, required) - Title of the tool.
+- link: `https://github.com/typicode/hotel` (string, required) - Link to the tool.
+- description: `Tool to search hotels.` (string, required) - Some description of the tool.
+- tags: `node`, `planning`, `domain` (array, optional) - Associated tags of the tool.
+
+## Error (object)
++ message (string) - Mensagem do status
++ description (string) - Descrição do status
