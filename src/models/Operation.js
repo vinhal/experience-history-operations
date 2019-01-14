@@ -33,10 +33,10 @@ const OperationSchema = new mongoose.Schema(
   },
   stSourceSystem: {
     type: String,
+    required: true,
   },
   stSegment: {
     type: String,
-    required: true,
   },
   dtTime: {
     type: Date,
