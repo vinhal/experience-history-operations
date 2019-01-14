@@ -10,6 +10,7 @@ const FuncionalitySchema = new mongoose.Schema(
   },
   stActions: {
     type: [String],
+    required: true,
   },
   stDescFunc: {
     type: String,
@@ -18,7 +19,6 @@ const FuncionalitySchema = new mongoose.Schema(
 },
 {
   versionKey: false,
-  _id : false
 },
 )
 

@@ -28,19 +28,4 @@ module.exports = {
       description: e
     }
   },
-
-  action(e) {
-    return { 
-      error: 'Bad Request',
-      message: 'There was a problem listing the action.',
-      description: e
-    }
-  },
-  action_store(e) {
-    return { 
-      error: 'Bad Request',
-      message: 'There was a problem registering the action.',
-      description: e
-    }
-  },
 }
