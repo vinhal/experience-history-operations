@@ -1,8 +1,8 @@
 {
-  "name": "vuttr-backend",
+  "name": "experience-history-operations",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:Vinhal/vuttr-backend.git",
+  "repository": "git@github.com:Vinhal/experience-history-operations.git",
   "author": "Vinhal <lucvinhal@gmail.com>",
   "license": "MIT",
   "dependencies": {

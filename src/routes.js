@@ -2,15 +2,14 @@ const express =  require('express')
 
 const routes = express.Router()
 
-const ToolsController = require('./controllers/ToolsController')
-const AuthController = require('./controllers/AuthController')
+const FuncionalityController = require('./controllers/FuncionalityController')
+const OperationController = require('./controllers/OperationController')
 
-routes.post('/register', AuthController.register)
-routes.post('/login', AuthController.login)
+routes.get('/funcionality', FuncionalityController.index)
+routes.post('/funcionality', FuncionalityController.store)
 
-routes.get('/tools', ToolsController.index)
-routes.post('/tools', AuthController.verifyJWT, ToolsController.store)
-routes.delete('/tools/:id', AuthController.verifyJWT, ToolsController.delete)
+routes.get('/operation', OperationController.index)
+routes.post('/operation', OperationController.store)
 
 
 module.exports = routes

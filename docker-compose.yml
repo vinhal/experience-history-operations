@@ -1,8 +1,8 @@
 version: '2.1'
 
 services:
-  vuttr:
-    container_name: vuttr
+  experience:
+    container_name: experience
     restart: always
     build: .
     ports:
